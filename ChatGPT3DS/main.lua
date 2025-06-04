@@ -53,8 +53,19 @@ local settingsItems = {
 local menuSelection = 1
 
 local chatModel = 1
-local CHAT_MODELS = {"gpt-3.5-turbo", "gpt-4"}
-local CHAT_COSTS = {0.002, 0.03} -- Cost per 1K tokens
+local CHAT_MODELS = {
+    "gpt-3.5-turbo",
+    "gpt-3.5-turbo-16k",
+    "gpt-4",
+    "gpt-4-32k"
+}
+-- Rough cost per 1K tokens for displaying an estimate
+local CHAT_COSTS = {
+    0.002,
+    0.004,
+    0.03,
+    0.06
+}
 
 local keyboardTrigger = false
 
